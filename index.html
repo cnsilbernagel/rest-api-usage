@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>REST API Anbindung (JS)</title>
+</head>
+
+<body>
+
+    <h3>Userliste</h3>
+    <div id="userlist"></div>
+
+    <h3>User suchen</h3>
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user-id" required>
+            <label class="mdl-textfield__label" for="user-id">User-ID eingeben...</label>
+            <span class="mdl-textfield__error">Eingabe ist kein numerischer Wert!</span>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised" id="search-user-btn">
+            Suchen
+        </button>
+    </form>
+
+    <h3>User hinzufügen</h3>
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="name" required>
+            <label class="mdl-textfield__label" for="name">Name eingeben...</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="job" required>
+            <label class="mdl-textfield__label" for="job">Beruf eingeben...</label>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised" id="add-user-btn">
+            Hinzufügen
+        </button>
+    </form>
+
+    <footer>
+        <script src="/js/script.js"></script>
+    </footer>
+</body>
+
+</html>
